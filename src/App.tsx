@@ -1,10 +1,18 @@
 import { useState } from "react";
+import styled from "styled-components";
+import Header from "./components/Header";
+
+const StyledMainWrapper = styled.div`
+  position: relative;
+`;
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen]: any = useState(false);
+
   return (
-    <div className="App">
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-    </div>
+    <StyledMainWrapper>
+      <Header />
+    </StyledMainWrapper>
   );
 }
 
